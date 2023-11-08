@@ -29,6 +29,8 @@ function loadFromLS(key) {
 
 function onload() {
   const data = loadFromLS('userKey');
+  refs.formElem.elements.email.value = data.userEmail;
+  refs.formElem.elements.message.value = data.userMessage;
 }
 function onFormElemSubmit(elem) {
   elem.preventDefault();
