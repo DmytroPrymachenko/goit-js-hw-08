@@ -34,9 +34,9 @@ function onload() {
 }
 function onFormElemSubmit(elem) {
   elem.preventDefault();
-  localStorage.removeItem('userKey');
+  // localStorage.removeItem('userKey');
   const data = loadFromLS('userKey');
-
+  console.log(data);
   elem.target.reset();
 }
 
